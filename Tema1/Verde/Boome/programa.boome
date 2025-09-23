@@ -1,0 +1,17 @@
+R0 = #0004
+sensor Der
+avanza Der
+sensor Der
+Scero #0003
+avanza Abj
+sensor Abj
+Scero #0006
+avanza Izq
+sensor Izq
+Scero #0009
+avanza Arr
+sensor Arr
+Scero #000c
+R0 = R0 - #0001
+cmp R0
+Sncero #0003
