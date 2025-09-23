@@ -48,15 +48,6 @@ def t_direc(L):
             return [False,B]
     return [False,L]
 
-"""
-print(numhex("#1111"))
-print(numhex(["#1111"]))
-print(numhex([False,"#1111"]))
-print(numhex([True,0x1111]))
-print(numhex([False,'#111R']))
-print(numhex([True,'#1fff']))
-"""
-
 def accion(L):
     match L:
         case ["avanza",D]:
@@ -92,13 +83,13 @@ def opermat(L):
                         RD,VD = D
                         LLL = [str(l) for l in [RA,RB,RC,RD]]
                         match LLL:
-                            case ["True","False","True","False"]:
+                            case ["True","False","True","False"]: # numhex Oper numhex
                                 return [True,None]
-                            case ["False","True","True","False"]:
+                            case ["False","True","True","False"]: # reg Oper numhex
                                 return [True,None]
-                            case ["False","True","False","True"]:
+                            case ["False","True","False","True"]: # reg Oper reg
                                 return [True,None]
-                            case ["True","False","False","True"]:
+                            case ["True","False","False","True"]: # numhex Oper reg
                                 return [True,None]
                         return [False,LLL]
             return [R,V]
@@ -151,16 +142,12 @@ def saltos(L):
                 return [True, None]
     return [False, L]
 
-def accion_codigo(STR):
-    if not isinstance(STR, str):
-        return [False, STR]
-    LS = STR.strip().split()
+def accion_codigo(LS): 
     return accion(LS)
 
-def linea_codigo(STR):
-    if not isinstance(STR, str):
-        return [False, STR]
-    LS = STR.strip().split()
+def linea_codigo(LS): 
+    if not isinstance(LS, list): 
+        return [False, LS]
     
     R_asigna, V_asigna = asigna(LS)
     if R_asigna:
@@ -174,10 +161,14 @@ def linea_codigo(STR):
     if R_saltos:
         return [True, None]
     
-    R_accion, V_accion = accion_codigo(STR)
+    R_accion, V_accion = accion_codigo(LS) 
     if R_accion:
         return [True, None]
     
+    R_evalua, V_evalua = evalua(LS) 
+    if R_evalua:
+        return [True, None]
+
     return [False, LS]
 
 def programa(L):
