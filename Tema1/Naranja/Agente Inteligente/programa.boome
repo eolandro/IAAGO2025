@@ -1,17 +1,16 @@
-R0 = #0003
-sensor Der
+R0 = #0001
 avanza Der
 sensor Der
-Scero #0003
+Scero #0002
 avanza Abj
 sensor Abj
-Scero #0006
+Scero #0005
 avanza Izq
 sensor Izq
-Scero #0009
+Scero #0008
 avanza Arr
 sensor Arr
-Scero #000c
+Scero #000b
 R0 = R0 - #0001
 cmp R0
-Sncero #0003
+Sncero #0002 

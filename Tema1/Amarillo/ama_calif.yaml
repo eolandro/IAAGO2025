@@ -1,0 +1,68 @@
+Equipo:
+- NoControl: '20590268'
+  Nombre: Andrea Martinez Ruiz
+- NoControl: '17142056'
+  Nombre: Juan Suriel Venancio Ruiz
+Calificacion: 41
+Informe:
+- Actividad: "Nombre: Podcast\nDescripción: Realizar un podcast, sobre la vision de
+    inteligencia según la lógica, la matemática, la filosofía y la psicología.\nNotas:
+    Si bien, cada uno de estos temas, es extenso, la idea es investigar y platicar
+    sobre las visiones de inteligencia.\nElementos Clave: Conductismo y Condicionamiento,
+    Autoreferencia, Paradoja del Barbero, Godel, Turing, Church, Post, Cognitivismo,
+    Conocimiento segun Kant, prensión algoritmica y aprensión,\nSEAES_CACEI: NA"
+  Reactivos:
+  - ID: R001
+    Ponderacion: 20
+    Reactivo: "Descripción: Presentación de la información y manejo del tema\nRestricciones:
+      NA."
+    Cumplio: Si
+  - ID: R002
+    Ponderacion: 20
+    Reactivo: "Descripción: Calidad de audio y producción\nRestricciones: NA."
+    Cumplio: Si
+- Actividad: "Nombre: Agente Inteligente (Boome)\nDescripción: Realizar Interprete
+    del lenguaje de boome a partir de la gramatica vista en el Tema 4 de programación
+    lógica y funcional.\nNotas: Dada el programa que presenta el docente, completarlo
+    para obtener el interprete completo, Hay que recalcar que este interprete es la
+    representacion abstracta del robot boome el cual es un agente inteligente.\nElementos
+    Clave: Idealmente el interprete se compone de dos partes el analizador-lexico
+    semantico esta programado en un enfoque logico (Traduccion de codigo prolog),
+    y la máquina virtual que ejecuta el código de boome, esta ultima con enfoque orientado
+    a Objeto.\nSEAES_CACEI: CD1-3, AE1, Vanguadia."
+  Reactivos:
+  - ID: R003
+    Ponderacion: 15
+    Reactivo: "Descripción: Representacion adecuada en consola.\nRestricciones: El
+      interprete debe mostrar en consola el valor de los registros, el mapa, la posición
+      de boome y los obstaculos"
+    Cumplio: No
+  - ID: R004
+    Ponderacion: 15
+    Reactivo: "Descripción: Ejecución completa del programa\nRestricciones: El interprete
+      debe sobrevivir a la ejecucion del codigo fuente."
+    Cumplio: No
+  - ID: R005
+    Ponderacion: 15
+    Reactivo: "Reactivo: Estructura del código\nRestricciones: El interprete deberia
+      tener código legible y bien estructurado."
+    Cumplio: No
+- Actividad: "Nombre: Linea del Tiempo.\nDescripción: Realizar una Linea del tiempo
+    fisica o digital de la historia de la inteligencia artificial.\nNotas: La linea
+    deberia incluir elementos de las ultimas dos decadas\nElementos Clave: Los Inviernos
+    de la IA Pedro miramontes, Prolog, Lisp, Neurona Artificial, Minsky, Transformers,
+    Redes Adversarias, Modelos probabilisticos de Difusion, LLM.\nSEAES_CACEI: CD1-3,
+    AE1, Vanguadia."
+  Reactivos:
+  - ID: R006
+    Ponderacion: 10
+    Reactivo: "Descripción: Informacion y Contenido.\nRestricciones: La informacion
+      y contenido no deberia ser superficial, ejemplo de mala información; \"Facebook
+      apaga dos IA por que inventan su propio lenguaje\", esta fue una noticia superflua,
+      que exagera lo sucedido."
+    Cumplio: Si
+  - ID: R007
+    Ponderacion: 5
+    Reactivo: "Descripción: Presentación\nRestricciones: Que la presentación de la
+      información sea creativa, hojas de calculo deberian ser omitidas."
+    Cumplio: Si
