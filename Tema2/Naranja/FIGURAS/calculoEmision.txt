@@ -1,0 +1,8 @@
+-> Mi laptop, en 1 hora de uso con un cargador de 65 W emite 0.0289 kgCO₂e = 28.9 gCO₂e
+
+-> El programa (adivinaFigura.py) duró 15.964 segundos en ejecutarse
+	15.964 s / 3600 = 0.00443 h
+
+-> Así que multipliqué 28.9 gCO₂e × 0.00443 h = 0.128 gCO₂e
+
+✅ Resultado: El programa generó aproximadamente 0.128 gCO₂e durante su ejecución.

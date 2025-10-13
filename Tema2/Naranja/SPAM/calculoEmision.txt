@@ -1,0 +1,25 @@
+-> Mi laptop, en 1 hora de uso con un cargador de 65 W emite 0.0289 kgCO₂e = 28.9 gCO₂e
+
+-> El programa (entrenador.py) duró 52.559 segundos en ejecutarse
+	52.559 s / 3600 = 0.0146 horas
+
+   El programa (detokenizador.py) duró 0.228 segundos en ejecutarse
+	0.228 s / 3600 = 0.0000633 horas
+
+   El programa (clasificador.py) duró 0.207 segundos en ejecutarse
+	0.207 s / 3600 = 0.0000575 horas
+
+   El programa (metrica.py) duró 21.684 segundos en ejecutarse
+	21.684 s / 3600 = 0.006023 horas
+
+-> Así que multipliqué la duración de cada programa (convertida a horas) por 28.9 gCO₂e 
+
+	entrenador.py    - 0.0146 h    x 28.9 gCO₂e/h = 0.422 gCO₂e
+
+	detokenizador.py - 0.0000633 h x 28.9 gCO₂e/h = 0.00183 gCO₂e
+
+	clasificador.py	 - 0.0000575 h x 28.9 gCO₂e/h = 0.00166 gCO₂e
+
+	metrica.py	 - 0.006023 h  x 28.9 gCO₂e/h = 0.174 gCO₂e
+
+✅ Resultado: La ejecución completa de los cuatro programas generó aproximadamente 0.60 gCO₂e 

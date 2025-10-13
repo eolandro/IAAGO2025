@@ -1,0 +1,20 @@
+-> Mi laptop, en 1 hora de uso con un cargador de 65 W emite 0.0289 kgCO₂e = 28.9 gCO₂e
+
+-> El programa (Inicializador.py) duró 1 minuto con 19.441 segundos en ejecutarse
+	79.441 s / 3600 = 0.0221 h
+
+   El programa (Entrenador.py) duró 1 minuto con 26.930 segundos en ejecutarse
+	86.930 s / 3600 = 0.0241 h
+
+   El programa (Adivinador.py) duró 14.592 segundos en ejecutarse
+	14.592  / 3600 = 0.00405 h
+
+-> Así que multipliqué la duración de cada programa (convertida a horas) por 28.9 gCO₂e 
+
+	Inicializador.py - 0.0221 h  x 28.9 gCO₂e/h = 0.64 gCO₂e
+
+	Entrenador.py    - 0.0241 h  x 28.9 gCO₂e/h = 0.70 gCO₂e
+
+	Adivinador.py	 - 0.00405 h x 28.9 gCO₂e/h = 0.12 gCO₂e
+
+✅ Resultado: La ejecución completa de los tres programas generó aproximadamente 1.46 gCO₂e 
