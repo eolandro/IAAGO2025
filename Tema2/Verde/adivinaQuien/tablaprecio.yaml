@@ -1,0 +1,40 @@
+caracteristicas:
+  - nombre: "Pinguino"
+    Pelaje: 580
+    total: "1001000100"  
+
+  - nombre: "Nutria"
+    Pelaje: 531
+    total: "1000010011"  
+
+  - nombre: "León"
+    Pelaje: 467
+    total: "0111010011"  
+
+  - nombre: "Gato"
+    Pelaje: 211
+    total: "0011010011"  
+
+  - nombre: "Canguro"
+    Pelaje: 131
+    total: "0010000011" 
+
+  - nombre: "Rata"
+    Pelaje: 83
+    total: "0001101001"  
+
+  - nombre: "Cocodrilo"
+    Pelaje: 48
+    total: "0000110000"  
+
+  - nombre: "Iguana"
+    Pelaje: 32
+    total: "0000100000"  
+
+  - nombre: "Mapache"
+    Pelaje: 19
+    total: "0000001011"  
+
+  - nombre: "Alacrán"
+    Pelaje: 8
+    total: "0000000100" 
