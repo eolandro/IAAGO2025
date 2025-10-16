@@ -1,0 +1,52 @@
+m1:
+  clasificacion: spam
+  promedio_P_spam: 0.697
+  texto: ¡Felicidades! Has sido seleccionado para recibir una tarjeta de regalo de
+    $500 en Amazon. Solo completa el formulario en el siguiente enlace antes de que
+    expire la promoción.
+m10:
+  clasificacion: spam
+  promedio_P_spam: 0.607
+  texto: '¡Recibe tu premio ahora! Solo por participar en nuestra encuesta podrás
+    ganar un año de Netflix totalmente gratis. Responde aquí: http://netflix-premios-2025.com'
+m2:
+  clasificacion: no_spam
+  promedio_P_spam: 0.333
+  texto: Hola Marta, ¿confirmas si la reunión con el cliente sigue a las 3 p.m.? Quiero
+    ajustar la presentación antes de enviarla al grupo.
+m3:
+  clasificacion: spam
+  promedio_P_spam: 0.698
+  texto: 'Estimado usuario, su cuenta bancaria ha sido bloqueada por motivos de seguridad.
+    Inicie sesión inmediatamente en el siguiente enlace para verificar su identidad:
+    http://seguridad-banco-verificacion.com'
+m4:
+  clasificacion: no_spam
+  promedio_P_spam: 0.333
+  texto: No olvides llevar el cargador y la cámara para el viaje, quiero tomar muchas
+    fotos del fin de semana en la playa.
+m5:
+  clasificacion: spam
+  promedio_P_spam: 0.667
+  texto: ¡Oferta exclusiva solo por hoy! Consigue el nuevo iPhone 15 al 70% de descuento
+    haciendo clic aquí http://oferta-iphone-premium.net
+m6:
+  clasificacion: no_spam
+  promedio_P_spam: 0.333
+  texto: Te recuerdo que mañana es el cumpleaños de Daniel, ¿compramos algo entre
+    todos para regalarle?
+m7:
+  clasificacion: spam
+  promedio_P_spam: 0.704
+  texto: '¡Tu cuenta de PayPal ha sido seleccionada para recibir un reembolso especial!
+    Accede al enlace para reclamarlo antes de que expire la promoción: http://paypal-bonus-info.com'
+m8:
+  clasificacion: spam
+  promedio_P_spam: 0.677
+  texto: Gana dinero fácil desde casa trabajando solo 2 horas al día. Miles de personas
+    ya lo están haciendo. Regístrate ahora y cambia tu vida.
+m9:
+  clasificacion: no_spam
+  promedio_P_spam: 0.333
+  texto: Buenos días, comparto la nota sobre el eclipse solar de mañana. Dicen que
+    será visible desde todo el país durante 4 minutos.
