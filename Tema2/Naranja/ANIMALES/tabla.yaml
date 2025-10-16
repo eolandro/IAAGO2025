@@ -1,54 +1,41 @@
 caracteristicas:
-- ¿Puede volar?
-- ¿Es un animal acuatico?
-- ¿Tiene orejas grandes?
-- ¿Tiene bigotes?
-- ¿Tiene plumas?
-- ¿Es un insecto?
-- ¿Tiene una melena?
-- ¿Tiene pico?
-- ¿Tiene escamas?
-- ¿Tiene 4 patas?
+- Puede volar?
+- Es un animal acuatico?
+- Tiene orejas grandes?
+- Tiene bigotes?
+- Tiene plumas?
+- Es un insecto?
+- Tiene una melena?
+- Tiene pico?
+- Tiene escamas?
+- Tiene 4 patas?
 tabla_animales:
-  Aguila:
-    respuestas:
-    - 1
-    - 0
-    - 0
-    - 0
-    - 1
-    - 0
-    - 0
-    - 1
-    - 0
-    - 0
-    suma_binaria: 548
-  Alacran:
+  Leon:
     respuestas:
     - 0
     - 0
     - 0
+    - 1
     - 0
     - 0
+    - 1
     - 0
     - 0
-    - 0
-    - 0
-    - 0
-    suma_binaria: 0
-  Catarina:
+    - 1
+    suma_binaria: 73
+  Mapache:
     respuestas:
+    - 0
+    - 0
+    - 0
     - 1
     - 0
     - 0
     - 0
     - 0
+    - 0
     - 1
-    - 0
-    - 0
-    - 0
-    - 0
-    suma_binaria: 528
+    suma_binaria: 65
   Cocodrilo:
     respuestas:
     - 0
@@ -75,6 +62,32 @@ tabla_animales:
     - 0
     - 1
     suma_binaria: 129
+  Alacran:
+    respuestas:
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    suma_binaria: 0
+  Aguila:
+    respuestas:
+    - 1
+    - 0
+    - 0
+    - 0
+    - 1
+    - 0
+    - 0
+    - 1
+    - 0
+    - 0
+    suma_binaria: 548
   Foca:
     respuestas:
     - 0
@@ -88,45 +101,6 @@ tabla_animales:
     - 0
     - 0
     suma_binaria: 320
-  León:
-    respuestas:
-    - 0
-    - 0
-    - 0
-    - 1
-    - 0
-    - 0
-    - 1
-    - 0
-    - 0
-    - 1
-    suma_binaria: 73
-  Mapache:
-    respuestas:
-    - 0
-    - 0
-    - 0
-    - 1
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 1
-    suma_binaria: 65
-  Pinguino:
-    respuestas:
-    - 0
-    - 1
-    - 0
-    - 0
-    - 1
-    - 0
-    - 0
-    - 1
-    - 0
-    - 0
-    suma_binaria: 292
   Rata:
     respuestas:
     - 0
@@ -140,3 +114,29 @@ tabla_animales:
     - 0
     - 1
     suma_binaria: 65
+  Catarina:
+    respuestas:
+    - 1
+    - 0
+    - 0
+    - 0
+    - 0
+    - 1
+    - 0
+    - 0
+    - 0
+    - 0
+    suma_binaria: 528
+  Pinguino:
+    respuestas:
+    - 0
+    - 1
+    - 0
+    - 0
+    - 1
+    - 0
+    - 0
+    - 1
+    - 0
+    - 0
+    suma_binaria: 292
