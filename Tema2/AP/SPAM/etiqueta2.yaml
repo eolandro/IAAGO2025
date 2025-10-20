@@ -1,0 +1,60 @@
+N1:
+  mensaje: Te felicitamos por tu excelente desempeño en el informe del proyecto.
+    Por favor, revisa la bonificación adjunta en el correo.
+  etiqueta: NO_SPAM
+  puntaje_spam: -54.35290733077845
+  puntaje_nospam: -52.16948861216966
+N2:
+  mensaje: ¡URGENTE! Has sido ganador de un premio mayor. Reclama tu oportunidad
+    y dinero fácil ahora mismo en el siguiente enlace.
+  etiqueta: SPAM
+  puntaje_spam: -72.35107548806614
+  puntaje_nospam: -74.2980823889489
+N3:
+  mensaje: Te envío la minuta de la reunión para que la revises antes del 
+    cierre. El documento está en los anexos.
+  etiqueta: NO_SPAM
+  puntaje_spam: -48.9869313157566
+  puntaje_nospam: -45.52569887902198
+N4:
+  mensaje: Nuestro banco te ofrece una oportunidad de préstamo sin intereses 
+    para consolidación de deudas. Aplica hoy y gana tranquilidad.
+  etiqueta: SPAM
+  puntaje_spam: -60.520511169354336
+  puntaje_nospam: -63.78309164489334
+N5:
+  mensaje: Favor de revisar los datos del informe antes de enviarlo a la 
+    dirección. Es crucial para el proyecto final.
+  etiqueta: NO_SPAM
+  puntaje_spam: -54.35290733077845
+  puntaje_nospam: -49.68458196238166
+N6:
+  mensaje: No te quedes sin reclamar tu premio instantáneo. Haz clic aquí, gana 
+    mucho dinero y sé feliz.
+  etiqueta: SPAM
+  puntaje_spam: -58.33258898468041
+  puntaje_nospam: -58.525596272865556
+N7:
+  mensaje: Tu cuenta ha sido bloqueada. Solicitud urgente de desbloqueo. 
+    Responde con tu clave.
+  etiqueta: SPAM
+  puntaje_spam: -40.848366578494975
+  puntaje_nospam: -41.65449786811409
+N8:
+  mensaje: Adjunto el balance del trimestre. Revisaremos los indicadores en la 
+    próxima reunión semanal.
+  etiqueta: NO_SPAM
+  puntaje_spam: -43.62095530073475
+  puntaje_nospam: -38.658765594560094
+N9:
+  mensaje: Felicidades, tu premio te espera. Solo tienes 24 horas para reclamar 
+    la solicitud.
+  etiqueta: NO_SPAM
+  puntaje_spam: -38.2549792857129
+  puntaje_nospam: -37.49561478475442
+N10:
+  mensaje: Confirmación de la cita con el equipo para discutir la campaña de 
+    marketing mañana.
+  etiqueta: NO_SPAM
+  puntaje_spam: -38.2549792857129
+  puntaje_nospam: -34.723026062514634

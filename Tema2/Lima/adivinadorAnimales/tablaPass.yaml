@@ -1,0 +1,110 @@
+alacran:
+  aletas: 0
+  bigotes: 0
+  colmillos: 0
+  escamas: 0
+  lengua aspera: 0
+  melena: 0
+  palmeada: 0
+  patear: 0
+  pelo: 0
+  veneno: 1
+canguro:
+  aletas: 0
+  bigotes: 1
+  colmillos: 0
+  escamas: 0
+  lengua aspera: 0
+  melena: 0
+  palmeada: 0
+  patear: 1
+  pelo: 1
+  veneno: 0
+cocodrilo:
+  aletas: 0
+  bigotes: 0
+  colmillos: 1
+  escamas: 1
+  lengua aspera: 0
+  melena: 0
+  palmeada: 0
+  patear: 0
+  pelo: 0
+  veneno: 0
+gato:
+  aletas: 0
+  bigotes: 1
+  colmillos: 1
+  escamas: 0
+  lengua aspera: 1
+  melena: 0
+  palmeada: 0
+  patear: 1
+  pelo: 1
+  veneno: 0
+iguana:
+  aletas: 0
+  bigotes: 0
+  colmillos: 0
+  escamas: 1
+  lengua aspera: 0
+  melena: 0
+  palmeada: 0
+  patear: 0
+  pelo: 0
+  veneno: 0
+leon:
+  aletas: 0
+  bigotes: 1
+  colmillos: 1
+  escamas: 0
+  lengua aspera: 1
+  melena: 1
+  palmeada: 0
+  patear: 1
+  pelo: 1
+  veneno: 0
+mapache:
+  aletas: 0
+  bigotes: 1
+  colmillos: 1
+  escamas: 0
+  lengua aspera: 0
+  melena: 0
+  palmeada: 0
+  patear: 0
+  pelo: 1
+  veneno: 0
+nutria:
+  aletas: 0
+  bigotes: 0
+  colmillos: 1
+  escamas: 0
+  lengua aspera: 0
+  melena: 0
+  palmeada: 1
+  patear: 0
+  pelo: 1
+  veneno: 0
+pinguino:
+  aletas: 1
+  bigotes: 0
+  colmillos: 0
+  escamas: 0
+  lengua aspera: 1
+  melena: 0
+  palmeada: 1
+  patear: 0
+  pelo: 0
+  veneno: 0
+rata:
+  aletas: 0
+  bigotes: 0
+  colmillos: 1
+  escamas: 0
+  lengua aspera: 1
+  melena: 0
+  palmeada: 0
+  patear: 0
+  pelo: 1
+  veneno: 0

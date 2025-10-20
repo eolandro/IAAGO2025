@@ -1,8 +1,9 @@
-import yaml
+from ruamel.yaml import YAML
 from pathlib import Path
 
 def entrenador():
     # Verificar que el archivo animales.yaml existe
+    yaml = YAML()
     archivo_animales = Path('animales.yaml')
     if not archivo_animales.exists():
         print("Error: No se encuentra el archivo 'animales.yaml'")
@@ -11,13 +12,13 @@ def entrenador():
 
     # Cargar datos del archivo YAML
     with open(archivo_animales, 'r') as file:
-        datos = yaml.safe_load(file)
+        datos = yaml.load(file)
     
     animales = datos['animales']
     caracteristicas = datos['caracteristicas']
     
     print("=== ENTRENADOR ===")
-    print("Responde 'si' o 'no' para cada característica, de cada animal:\n")
+    print("Responde 'si' o 'no' para cada característica de cada animal:\n")
     
     # Crear tabla de respuestas
     tabla = {}
@@ -38,6 +39,8 @@ def entrenador():
                 else:
                     print("Por favor, responde 'si' o 'no'")
                     
+        
+
         # Calcular suma binaria 
         suma_binaria = 0
         for bit in respuestas:
@@ -56,11 +59,12 @@ def entrenador():
     }
     
     with open('tabla.yaml', 'w') as file:
-        yaml.dump(datos_tabla, file, default_flow_style=False, allow_unicode=True)
+        yaml.dump(datos_tabla, file)
     
-    print(f"\nTabla guardada como 'tabla.yaml'")
-    print("Resumen de sumas binarias:\n")
+    print(f"\nTabla guardada en 'tabla.yaml'")
+    print("Resumen de sumas binarias:")
     for animal, datos in tabla.items():
         print(f"{animal}: {datos['respuestas']} → {datos['suma_binaria']}")
+
 
 entrenador()

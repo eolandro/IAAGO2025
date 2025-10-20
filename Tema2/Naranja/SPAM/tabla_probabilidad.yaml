@@ -1,0 +1,655 @@
+probabilidades:
+  accede:
+    P_no_spam: 0.333
+    P_spam: 0.667
+    apariciones_no_spam: 0
+    apariciones_spam: 1
+    total_apariciones: 1
+  actividad:
+    P_no_spam: 0.333
+    P_spam: 0.667
+    apariciones_no_spam: 0
+    apariciones_spam: 1
+    total_apariciones: 1
+  adicionales:
+    P_no_spam: 0.333
+    P_spam: 0.667
+    apariciones_no_spam: 0
+    apariciones_spam: 1
+    total_apariciones: 1
+  aduana:
+    P_no_spam: 0.333
+    P_spam: 0.667
+    apariciones_no_spam: 0
+    apariciones_spam: 1
+    total_apariciones: 1
+  aeropuerto:
+    P_no_spam: 0.667
+    P_spam: 0.333
+    apariciones_no_spam: 1
+    apariciones_spam: 0
+    total_apariciones: 1
+  ahora:
+    P_no_spam: 0.25
+    P_spam: 0.75
+    apariciones_no_spam: 0
+    apariciones_spam: 2
+    total_apariciones: 2
+  anunció:
+    P_no_spam: 0.667
+    P_spam: 0.333
+    apariciones_no_spam: 1
+    apariciones_spam: 0
+    total_apariciones: 1
+  aprovechar:
+    P_no_spam: 0.333
+    P_spam: 0.667
+    apariciones_no_spam: 0
+    apariciones_spam: 1
+    total_apariciones: 1
+  aquí:
+    P_no_spam: 0.25
+    P_spam: 0.75
+    apariciones_no_spam: 0
+    apariciones_spam: 2
+    total_apariciones: 2
+  artículo:
+    P_no_spam: 0.667
+    P_spam: 0.333
+    apariciones_no_spam: 1
+    apariciones_spam: 0
+    total_apariciones: 1
+  avísame:
+    P_no_spam: 0.667
+    P_spam: 0.333
+    apariciones_no_spam: 1
+    apariciones_spam: 0
+    total_apariciones: 1
+  bien:
+    P_no_spam: 0.75
+    P_spam: 0.25
+    apariciones_no_spam: 2
+    apariciones_spam: 0
+    total_apariciones: 2
+  bloqueada:
+    P_no_spam: 0.333
+    P_spam: 0.667
+    apariciones_no_spam: 0
+    apariciones_spam: 1
+    total_apariciones: 1
+  bono:
+    P_no_spam: 0.333
+    P_spam: 0.667
+    apariciones_no_spam: 0
+    apariciones_spam: 1
+    total_apariciones: 1
+  cambio:
+    P_no_spam: 0.667
+    P_spam: 0.333
+    apariciones_no_spam: 1
+    apariciones_spam: 0
+    total_apariciones: 1
+  cargos:
+    P_no_spam: 0.333
+    P_spam: 0.667
+    apariciones_no_spam: 0
+    apariciones_spam: 1
+    total_apariciones: 1
+  casa:
+    P_no_spam: 0.333
+    P_spam: 0.667
+    apariciones_no_spam: 0
+    apariciones_spam: 1
+    total_apariciones: 1
+  cierre:
+    P_no_spam: 0.333
+    P_spam: 0.667
+    apariciones_no_spam: 0
+    apariciones_spam: 1
+    total_apariciones: 1
+  claro:
+    P_no_spam: 0.667
+    P_spam: 0.333
+    apariciones_no_spam: 1
+    apariciones_spam: 0
+    total_apariciones: 1
+  clave:
+    P_no_spam: 0.667
+    P_spam: 0.333
+    apariciones_no_spam: 1
+    apariciones_spam: 0
+    total_apariciones: 1
+  clic:
+    P_no_spam: 0.25
+    P_spam: 0.75
+    apariciones_no_spam: 0
+    apariciones_spam: 2
+    total_apariciones: 2
+  climático:
+    P_no_spam: 0.667
+    P_spam: 0.333
+    apariciones_no_spam: 1
+    apariciones_spam: 0
+    total_apariciones: 1
+  completamente:
+    P_no_spam: 0.333
+    P_spam: 0.667
+    apariciones_no_spam: 0
+    apariciones_spam: 1
+    total_apariciones: 1
+  completar:
+    P_no_spam: 0.333
+    P_spam: 0.667
+    apariciones_no_spam: 0
+    apariciones_spam: 1
+    total_apariciones: 1
+  compra:
+    P_no_spam: 0.333
+    P_spam: 0.667
+    apariciones_no_spam: 0
+    apariciones_spam: 1
+    total_apariciones: 1
+  conexión:
+    P_no_spam: 0.667
+    P_spam: 0.333
+    apariciones_no_spam: 1
+    apariciones_spam: 0
+    total_apariciones: 1
+  confirmar:
+    P_no_spam: 0.667
+    P_spam: 0.333
+    apariciones_no_spam: 1
+    apariciones_spam: 0
+    total_apariciones: 1
+  cuenta:
+    P_no_spam: 0.333
+    P_spam: 0.667
+    apariciones_no_spam: 0
+    apariciones_spam: 1
+    total_apariciones: 1
+  datos:
+    P_no_spam: 0.5
+    P_spam: 0.5
+    apariciones_no_spam: 1
+    apariciones_spam: 1
+    total_apariciones: 2
+  dinero:
+    P_no_spam: 0.333
+    P_spam: 0.667
+    apariciones_no_spam: 0
+    apariciones_spam: 1
+    total_apariciones: 1
+  documental:
+    P_no_spam: 0.667
+    P_spam: 0.333
+    apariciones_no_spam: 1
+    apariciones_spam: 0
+    total_apariciones: 1
+  económicas:
+    P_no_spam: 0.667
+    P_spam: 0.333
+    apariciones_no_spam: 1
+    apariciones_spam: 0
+    total_apariciones: 1
+  enlace:
+    P_no_spam: 0.25
+    P_spam: 0.75
+    apariciones_no_spam: 0
+    apariciones_spam: 2
+    total_apariciones: 2
+  escribo:
+    P_no_spam: 0.667
+    P_spam: 0.333
+    apariciones_no_spam: 1
+    apariciones_spam: 0
+    total_apariciones: 1
+  especial:
+    P_no_spam: 0.333
+    P_spam: 0.667
+    apariciones_no_spam: 0
+    apariciones_spam: 1
+    total_apariciones: 1
+  esperando:
+    P_no_spam: 0.667
+    P_spam: 0.333
+    apariciones_no_spam: 1
+    apariciones_spam: 0
+    total_apariciones: 1
+  estoy:
+    P_no_spam: 0.667
+    P_spam: 0.333
+    apariciones_no_spam: 1
+    apariciones_spam: 0
+    total_apariciones: 1
+  está:
+    P_no_spam: 0.6
+    P_spam: 0.4
+    apariciones_no_spam: 2
+    apariciones_spam: 1
+    total_apariciones: 3
+  están:
+    P_no_spam: 0.333
+    P_spam: 0.667
+    apariciones_no_spam: 0
+    apariciones_spam: 1
+    total_apariciones: 1
+  evita:
+    P_no_spam: 0.333
+    P_spam: 0.667
+    apariciones_no_spam: 0
+    apariciones_spam: 1
+    total_apariciones: 1
+  evitar:
+    P_no_spam: 0.333
+    P_spam: 0.667
+    apariciones_no_spam: 0
+    apariciones_spam: 1
+    total_apariciones: 1
+  exclusiva:
+    P_no_spam: 0.333
+    P_spam: 0.667
+    apariciones_no_spam: 0
+    apariciones_spam: 1
+    total_apariciones: 1
+  exclusivo:
+    P_no_spam: 0.333
+    P_spam: 0.667
+    apariciones_no_spam: 0
+    apariciones_spam: 1
+    total_apariciones: 1
+  experiencia:
+    P_no_spam: 0.333
+    P_spam: 0.667
+    apariciones_no_spam: 0
+    apariciones_spam: 1
+    total_apariciones: 1
+  expire:
+    P_no_spam: 0.333
+    P_spam: 0.667
+    apariciones_no_spam: 0
+    apariciones_spam: 1
+    total_apariciones: 1
+  felicidades:
+    P_no_spam: 0.333
+    P_spam: 0.667
+    apariciones_no_spam: 0
+    apariciones_spam: 1
+    total_apariciones: 1
+  formulario:
+    P_no_spam: 0.333
+    P_spam: 0.667
+    apariciones_no_spam: 0
+    apariciones_spam: 1
+    total_apariciones: 1
+  gana:
+    P_no_spam: 0.333
+    P_spam: 0.667
+    apariciones_no_spam: 0
+    apariciones_spam: 1
+    total_apariciones: 1
+  gobierno:
+    P_no_spam: 0.667
+    P_spam: 0.333
+    apariciones_no_spam: 1
+    apariciones_spam: 0
+    total_apariciones: 1
+  gratis:
+    P_no_spam: 0.25
+    P_spam: 0.75
+    apariciones_no_spam: 0
+    apariciones_spam: 2
+    total_apariciones: 2
+  haciendo:
+    P_no_spam: 0.333
+    P_spam: 0.667
+    apariciones_no_spam: 0
+    apariciones_spam: 1
+    total_apariciones: 1
+  has:
+    P_no_spam: 0.333
+    P_spam: 0.667
+    apariciones_no_spam: 0
+    apariciones_spam: 1
+    total_apariciones: 1
+  haz:
+    P_no_spam: 0.25
+    P_spam: 0.75
+    apariciones_no_spam: 0
+    apariciones_spam: 2
+    total_apariciones: 2
+  hecho:
+    P_no_spam: 0.667
+    P_spam: 0.333
+    apariciones_no_spam: 1
+    apariciones_spam: 0
+    total_apariciones: 1
+  hola:
+    P_no_spam: 0.667
+    P_spam: 0.333
+    apariciones_no_spam: 1
+    apariciones_spam: 0
+    total_apariciones: 1
+  hoy:
+    P_no_spam: 0.333
+    P_spam: 0.667
+    apariciones_no_spam: 0
+    apariciones_spam: 1
+    total_apariciones: 1
+  identidad:
+    P_no_spam: 0.333
+    P_spam: 0.667
+    apariciones_no_spam: 0
+    apariciones_spam: 1
+    total_apariciones: 1
+  impactantes:
+    P_no_spam: 0.667
+    P_spam: 0.333
+    apariciones_no_spam: 1
+    apariciones_spam: 0
+    total_apariciones: 1
+  laura:
+    P_no_spam: 0.667
+    P_spam: 0.333
+    apariciones_no_spam: 1
+    apariciones_spam: 0
+    total_apariciones: 1
+  liberarlo:
+    P_no_spam: 0.333
+    P_spam: 0.667
+    apariciones_no_spam: 0
+    apariciones_spam: 1
+    total_apariciones: 1
+  limitada:
+    P_no_spam: 0.333
+    P_spam: 0.667
+    apariciones_no_spam: 0
+    apariciones_spam: 1
+    total_apariciones: 1
+  llegue:
+    P_no_spam: 0.667
+    P_spam: 0.333
+    apariciones_no_spam: 1
+    apariciones_spam: 0
+    total_apariciones: 1
+  llegué:
+    P_no_spam: 0.667
+    P_spam: 0.333
+    apariciones_no_spam: 1
+    apariciones_spam: 0
+    total_apariciones: 1
+  mamá:
+    P_no_spam: 0.667
+    P_spam: 0.333
+    apariciones_no_spam: 1
+    apariciones_spam: 0
+    total_apariciones: 1
+  mando:
+    P_no_spam: 0.667
+    P_spam: 0.333
+    apariciones_no_spam: 1
+    apariciones_spam: 0
+    total_apariciones: 1
+  mañana:
+    P_no_spam: 0.667
+    P_spam: 0.333
+    apariciones_no_spam: 1
+    apariciones_spam: 0
+    total_apariciones: 1
+  medidas:
+    P_no_spam: 0.667
+    P_spam: 0.333
+    apariciones_no_spam: 1
+    apariciones_spam: 0
+    total_apariciones: 1
+  miles:
+    P_no_spam: 0.333
+    P_spam: 0.667
+    apariciones_no_spam: 0
+    apariciones_spam: 1
+    total_apariciones: 1
+  movamos:
+    P_no_spam: 0.667
+    P_spam: 0.333
+    apariciones_no_spam: 1
+    apariciones_spam: 0
+    total_apariciones: 1
+  necesitas:
+    P_no_spam: 0.667
+    P_spam: 0.333
+    apariciones_no_spam: 1
+    apariciones_spam: 0
+    total_apariciones: 1
+  netflix:
+    P_no_spam: 0.667
+    P_spam: 0.333
+    apariciones_no_spam: 1
+    apariciones_spam: 0
+    total_apariciones: 1
+  nuevas:
+    P_no_spam: 0.667
+    P_spam: 0.333
+    apariciones_no_spam: 1
+    apariciones_spam: 0
+    total_apariciones: 1
+  nuevo:
+    P_no_spam: 0.667
+    P_spam: 0.333
+    apariciones_no_spam: 1
+    apariciones_spam: 0
+    total_apariciones: 1
+  oferta:
+    P_no_spam: 0.25
+    P_spam: 0.75
+    apariciones_no_spam: 0
+    apariciones_spam: 2
+    total_apariciones: 2
+  oportunidad:
+    P_no_spam: 0.333
+    P_spam: 0.667
+    apariciones_no_spam: 0
+    apariciones_spam: 1
+    total_apariciones: 1
+  pago:
+    P_no_spam: 0.333
+    P_spam: 0.667
+    apariciones_no_spam: 0
+    apariciones_spam: 1
+    total_apariciones: 1
+  paquete:
+    P_no_spam: 0.333
+    P_spam: 0.667
+    apariciones_no_spam: 0
+    apariciones_spam: 1
+    total_apariciones: 1
+  permanente:
+    P_no_spam: 0.333
+    P_spam: 0.667
+    apariciones_no_spam: 0
+    apariciones_spam: 1
+    total_apariciones: 1
+  pierdas:
+    P_no_spam: 0.333
+    P_spam: 0.667
+    apariciones_no_spam: 0
+    apariciones_spam: 1
+    total_apariciones: 1
+  premio:
+    P_no_spam: 0.333
+    P_spam: 0.667
+    apariciones_no_spam: 0
+    apariciones_spam: 1
+    total_apariciones: 1
+  producto:
+    P_no_spam: 0.333
+    P_spam: 0.667
+    apariciones_no_spam: 0
+    apariciones_spam: 1
+    total_apariciones: 1
+  puntos:
+    P_no_spam: 0.667
+    P_spam: 0.333
+    apariciones_no_spam: 1
+    apariciones_spam: 0
+    total_apariciones: 1
+  puntual:
+    P_no_spam: 0.667
+    P_spam: 0.333
+    apariciones_no_spam: 1
+    apariciones_spam: 0
+    total_apariciones: 1
+  quería:
+    P_no_spam: 0.667
+    P_spam: 0.333
+    apariciones_no_spam: 1
+    apariciones_spam: 0
+    total_apariciones: 1
+  realiza:
+    P_no_spam: 0.333
+    P_spam: 0.667
+    apariciones_no_spam: 0
+    apariciones_spam: 1
+    total_apariciones: 1
+  recibe:
+    P_no_spam: 0.333
+    P_spam: 0.667
+    apariciones_no_spam: 0
+    apariciones_spam: 1
+    total_apariciones: 1
+  recibir:
+    P_no_spam: 0.25
+    P_spam: 0.75
+    apariciones_no_spam: 0
+    apariciones_spam: 2
+    total_apariciones: 2
+  recompensa:
+    P_no_spam: 0.333
+    P_spam: 0.667
+    apariciones_no_spam: 0
+    apariciones_spam: 1
+    total_apariciones: 1
+  regístrate:
+    P_no_spam: 0.333
+    P_spam: 0.667
+    apariciones_no_spam: 0
+    apariciones_spam: 1
+    total_apariciones: 1
+  resume:
+    P_no_spam: 0.667
+    P_spam: 0.333
+    apariciones_no_spam: 1
+    apariciones_spam: 0
+    total_apariciones: 1
+  retenido:
+    P_no_spam: 0.333
+    P_spam: 0.667
+    apariciones_no_spam: 0
+    apariciones_spam: 1
+    total_apariciones: 1
+  reunión:
+    P_no_spam: 0.667
+    P_spam: 0.333
+    apariciones_no_spam: 1
+    apariciones_spam: 0
+    total_apariciones: 1
+  salió:
+    P_no_spam: 0.75
+    P_spam: 0.25
+    apariciones_no_spam: 2
+    apariciones_spam: 0
+    total_apariciones: 2
+  seguimos:
+    P_no_spam: 0.667
+    P_spam: 0.333
+    apariciones_no_spam: 1
+    apariciones_spam: 0
+    total_apariciones: 1
+  segundo:
+    P_no_spam: 0.333
+    P_spam: 0.667
+    apariciones_no_spam: 0
+    apariciones_spam: 1
+    total_apariciones: 1
+  seleccionada:
+    P_no_spam: 0.333
+    P_spam: 0.667
+    apariciones_no_spam: 0
+    apariciones_spam: 1
+    total_apariciones: 1
+  seleccionado:
+    P_no_spam: 0.333
+    P_spam: 0.667
+    apariciones_no_spam: 0
+    apariciones_spam: 1
+    total_apariciones: 1
+  semana:
+    P_no_spam: 0.667
+    P_spam: 0.333
+    apariciones_no_spam: 1
+    apariciones_spam: 0
+    total_apariciones: 1
+  sido:
+    P_no_spam: 0.2
+    P_spam: 0.8
+    apariciones_no_spam: 0
+    apariciones_spam: 3
+    total_apariciones: 3
+  siguiente:
+    P_no_spam: 0.333
+    P_spam: 0.667
+    apariciones_no_spam: 0
+    apariciones_spam: 1
+    total_apariciones: 1
+  sospechosa:
+    P_no_spam: 0.333
+    P_spam: 0.667
+    apariciones_no_spam: 0
+    apariciones_spam: 1
+    total_apariciones: 1
+  tarjeta:
+    P_no_spam: 0.333
+    P_spam: 0.667
+    apariciones_no_spam: 0
+    apariciones_spam: 1
+    total_apariciones: 1
+  tiene:
+    P_no_spam: 0.667
+    P_spam: 0.333
+    apariciones_no_spam: 1
+    apariciones_spam: 0
+    total_apariciones: 1
+  tienes:
+    P_no_spam: 0.333
+    P_spam: 0.667
+    apariciones_no_spam: 0
+    apariciones_spam: 1
+    total_apariciones: 1
+  urgente:
+    P_no_spam: 0.333
+    P_spam: 0.667
+    apariciones_no_spam: 0
+    apariciones_spam: 1
+    total_apariciones: 1
+  verifica:
+    P_no_spam: 0.333
+    P_spam: 0.667
+    apariciones_no_spam: 0
+    apariciones_spam: 1
+    total_apariciones: 1
+  verificar:
+    P_no_spam: 0.333
+    P_spam: 0.667
+    apariciones_no_spam: 0
+    apariciones_spam: 1
+    total_apariciones: 1
+  viste:
+    P_no_spam: 0.667
+    P_spam: 0.333
+    apariciones_no_spam: 1
+    apariciones_spam: 0
+    total_apariciones: 1
+  vuelo:
+    P_no_spam: 0.667
+    P_spam: 0.333
+    apariciones_no_spam: 1
+    apariciones_spam: 0
+    total_apariciones: 1

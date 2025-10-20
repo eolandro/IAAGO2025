@@ -1,8 +1,9 @@
-import yaml
+from ruamel.yaml import YAML
 from pathlib import Path
 
 def adivinador():
     # Verificar que existan ambos archivos
+    yaml = YAML()
     archivo_animales = Path('animales.yaml')
     archivo_tabla = Path('tabla.yaml')
     
@@ -13,10 +14,10 @@ def adivinador():
 
     # Cargar datos
     with open(archivo_animales, 'r') as file:
-        datos_animales = yaml.safe_load(file)
+        datos_animales = yaml.load(file)
     
     with open(archivo_tabla, 'r') as file:
-        datos_tabla = yaml.safe_load(file)
+        datos_tabla = yaml.load(file)
     
     caracteristicas = datos_tabla['caracteristicas']
     tabla_animales = datos_tabla['tabla_animales']
@@ -80,7 +81,7 @@ def adivinador():
                     break
                 else:
                     print("Por favor, responde 'si' o 'no'")
-            break  # Salida del bucle principal
+            break  # Salimos del bucle principal
         
         # Si no hay preguntas útiles y hay más de 2 candidatos, usar la primera
         if mejor_pregunta is None:
@@ -116,8 +117,9 @@ def adivinador():
     
     # Mostrar resultado
     if len(candidatos) == 1:
-        print(f"\n¡Adiviné! Tu animal es: {candidatos[0]}")
+        print(f"\n¡Adiviné! Tu animal es un/a: {candidatos[0]}")
     else:
         print("\nNo pude adivinar tu animal. Puede que haya un error en los datos.")
+
 
 adivinador()

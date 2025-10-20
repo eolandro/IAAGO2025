@@ -1,0 +1,50 @@
+M1:
+  mensaje: ¡FELICIDADES! Has **ganado** un **premio** de un millón de dólares. 
+    Para **reclamar** tu **premio** **urgente**, haz clic en el siguiente 
+    **enlace**. No pierdas esta **oportunidad** única de **ganar** **dinero** 
+    rápido. Es **fácil**.
+  etiqueta: SPAM
+M2:
+  mensaje: Estimado equipo, adjunto el **informe** de **revisión** del 
+    **proyecto** que discutiremos en la **reunión** de mañana. Por favor, 
+    **revisen** los anexos 3 y 4.
+  etiqueta: NO_SPAM
+M3:
+  mensaje: Tu cuenta bancaria ha sido bloqueada. **Solicitud** de **préstamo** 
+    rápido y **urgente** para **desbloquearla**. Responda inmediatamente con su 
+    clave de seguridad para evitar cargos adicionales.
+  etiqueta: SPAM
+M4:
+  mensaje: Adjunto el **informe** de **progreso** del **proyecto** final. Les 
+    pido su **revisión** de los indicadores clave antes de la **reunión** de 
+    cierre. Confirmar recepción.
+  etiqueta: NO_SPAM
+M5:
+  mensaje: '**Gana** **dinero** **fácil** desde casa con nuestro nuevo programa de
+    afiliados. Obtén ingresos pasivos sin esfuerzo ni inversión. ¡**Felicidades**
+    por esta **oportunidad** de cambiar tu vida! **Reclama** tu acceso hoy.'
+  etiqueta: SPAM
+M6:
+  mensaje: 'Recordatorio de la **junta semanal**: **Revisar** los indicadores de rendimiento
+    clave (KPIs) antes de las 4 PM. Es crucial para la **revisión** de la próxima
+    campaña de marketing.'
+  etiqueta: NO_SPAM
+M7:
+  mensaje: ¡**Reclama** tu tarjeta de **regalo** **urgente** por tu fidelidad de
+    10 años! Accede al portal para **canjear** tu **código**. Esta 
+    **oportunidad** vence en 24 horas y puedes **ganar** un **premio** extra.
+  etiqueta: SPAM
+M8:
+  mensaje: Buen día. Confirmo la **recepción** del **correo** y adjunto el 
+    **documento** requerido para la **revisión** de la **reunión**. Cualquier 
+    duda, por favor avísenme.
+  etiqueta: NO_SPAM
+M9:
+  mensaje: '**Oportunidad** de **préstamo** sin intereses para **consolidación** de
+    deudas. Montos disponibles de hasta 500k. Aplica hoy mismo y empieza a **ganar**
+    tranquilidad. **Reclama** tu **solicitud** ahora.'
+  etiqueta: SPAM
+M10:
+  mensaje: '**Felicidades** por tu **excelente** **trabajo** en el último trimestre.
+    Tus resultados fueron **destacados**. Adjunto tu bono trimestral.'
+  etiqueta: NO_SPAM

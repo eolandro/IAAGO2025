@@ -1,0 +1,88 @@
+{
+  "Preguntas": {
+    "A": "Cuantos lados tiene?",
+
+    "A0": "Tiene un radio constante?",
+    "A0S": "Es un Circulo",
+    "A0N": "Es una Elipse",
+
+    "A3": "Tiene un angulo recto?",
+    "A3S": "Es un Triangulo rectangulo",
+    "A3N": "Sus tres angulos se ven iguales?",
+    "A3NS": "Es un Triangulo equilatero",
+    "A3NN": "Tiene dos lados del mismo tamano?",
+    "A3NNS": "Es un Triangulo isosceles",
+    "A3NNN": "Es un Triangulo escaleno",
+
+    "A4": "Todos sus angulos son rectos?",
+    "A4S": "Es un Cuadrado o Rectangulo",
+    "A4N": "Los lados de enfrente se ven paralelos?",
+    "A4NS": "Se ve como un diamante?",
+    "A4NSS": "Es un Rombo",
+    "A4NSN": "Es un Romboide",
+    "A4NN": "Solo un par de lados se ve paralelo?",
+    "A4NNS": "Tiene un angulo recto?",
+    "A4NNSS": "Es un Trapecio rectangulo",
+    "A4NNSN": "Es un Trapecio",
+    "A4NNN": "Es un Cuadrilatero irregular",
+
+    "A5": "Es una estrella de 5 puntas?",
+    "A5S": "Es una Estrella de 5 puntas",
+    "A5N": "Es un Pentagono",
+
+    "A6": "Se ve parejito?",
+    "A6S": "Es un Hexagono regular",
+    "A6N": "Es un Hexagono irregular",
+
+    "A8": "Se ve parejito?",
+    "A8S": "Es un Octagono regular",
+    "A8N": "Es un Octagono irregular",
+
+    "A10": "Se ve parejito?",
+    "A10S": "Es un Decagono regular",
+    "A10N": "Es un Decagono irregular"
+  },
+
+  "Transcisiones": [
+    ["A", "0", "A0"],
+    ["A", "3", "A3"],
+    ["A", "4", "A4"],
+    ["A", "5", "A5"],
+    ["A", "6", "A6"],
+    ["A", "8", "A8"],
+    ["A", "10", "A10"],
+
+    ["A0", "si", "A0S"],
+    ["A0", "no", "A0N"],
+
+    ["A3", "si", "A3S"],
+    ["A3", "no", "A3N"],
+    ["A3N", "si", "A3NS"],
+    ["A3N", "no", "A3NN"],
+    ["A3NN", "si", "A3NNS"],
+    ["A3NN", "no", "A3NNN"],
+
+    ["A4", "si", "A4S"],
+    ["A4", "no", "A4N"],
+    ["A4N", "si", "A4NS"],
+    ["A4N", "no", "A4NN"],
+    ["A4NS", "si", "A4NSS"],
+    ["A4NS", "no", "A4NSN"],
+    ["A4NN", "si", "A4NNS"],
+    ["A4NN", "no", "A4NNN"],
+    ["A4NNS", "si", "A4NNSS"],
+    ["A4NNS", "no", "A4NNSN"],
+
+    ["A5", "si", "A5S"],
+    ["A5", "no", "A5N"],
+
+    ["A6", "si", "A6S"],
+    ["A6", "no", "A6N"],
+
+    ["A8", "si", "A8S"],
+    ["A8", "no", "A8N"],
+
+    ["A10", "si", "A10S"],
+    ["A10", "no", "A10N"]
+  ]
+}

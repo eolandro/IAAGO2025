@@ -1,0 +1,78 @@
+Preguntas:
+  P_RAIZ: "¿Tiene más de cuatro lados o es una figura curva o sin lados definidos?"
+  
+  P_ES_CURVA: "¿Tiene lados curvos?" 
+  P_ESTRELLA_O_GRANDE: "¿Tiene algún ángulo interno más pequeño que 40 grados?"
+  P_GRANDES_REGULAR: "¿Es un polígono regular (todos los lados y ángulos iguales)?"
+  P_N_LADOS_G: "¿Tiene más de 5 lados?"
+  P_CIRCULO: "¿Tiene un radio constante?"
+  P_DECAGONO_OCTAGONO: "¿Su ángulo interno es mayor de 140 grados?"
+
+  P_3_O_4_LADOS: "¿Tiene exactamente cuatro lados?"
+
+  P_TIPO_T: "¿Tiene dos o más lados iguales?" 
+  P_ISOC: "¿Son sus tres lados iguales?"
+  P_RECT: "¿Tiene un ángulo recto (90°)?"
+
+  P_4L_REG: "¿Tiene todos sus ángulos internos iguales (90°)? " 
+  P_4L_EQ: "¿Son sus cuatro lados iguales?" 
+  P_4L_PAR: "¿Sus lados tienen diferente longitud?" 
+
+  F_CIRCULO: "Círculo"
+  F_ELIPSE: "Elipse"
+  F_ESTRELLA: "Estrella"
+  F_T_EQUILATERO: "Triángulo Equilátero"
+  F_T_ISOSCELES: "Triángulo Isósceles"
+  F_T_RECTANGULO: "Triángulo Rectángulo"
+  F_T_OBTUSO: "Triángulo Obtuso"
+  F_CUADRADO: "Cuadrado"
+  F_RECTANGULO: "Rectángulo"
+  F_ROMBO: "Rombo"
+  F_TRAPECIO: "Trapecio"
+  F_PENTAGONO: "Pentágono"
+  F_OCTAGONO: "Octágono"
+  F_DECAGONO: "Decágono"
+
+Transiciones:
+  
+  - ["P_RAIZ", "SI", "P_ES_CURVA"] 
+  - ["P_RAIZ", "NO", "P_3_O_4_LADOS"] 
+
+  - ["P_ES_CURVA", "SI", "P_CIRCULO"] 
+  - ["P_ES_CURVA", "NO", "P_ESTRELLA_O_GRANDE"]
+
+  - ["P_CIRCULO", "SI", "F_CIRCULO"]
+  - ["P_CIRCULO", "NO", "F_ELIPSE"]
+
+  - ["P_ESTRELLA_O_GRANDE", "SI", "F_ESTRELLA"]
+  - ["P_ESTRELLA_O_GRANDE", "NO", "P_GRANDES_REGULAR"] 
+
+  - ["P_GRANDES_REGULAR", "SI", "P_N_LADOS_G"] 
+  - ["P_GRANDES_REGULAR", "NO", "F_PENTAGONO"]
+
+  - ["P_N_LADOS_G", "SI", "P_DECAGONO_OCTAGONO"] 
+  - ["P_N_LADOS_G", "NO", "F_PENTAGONO"]
+
+  - ["P_DECAGONO_OCTAGONO", "SI", "F_DECAGONO"]
+  - ["P_DECAGONO_OCTAGONO", "NO", "F_OCTAGONO"]
+  
+  - ["P_3_O_4_LADOS", "SI", "P_4L_REG"] 
+  - ["P_3_O_4_LADOS", "NO", "P_TIPO_T"] 
+  
+  - ["P_TIPO_T", "SI", "P_ISOC"]   
+  - ["P_TIPO_T", "NO", "P_RECT"]   
+  
+  - ["P_ISOC", "SI", "F_T_EQUILATERO"]
+  - ["P_ISOC", "NO", "F_T_ISOSCELES"]
+  
+  - ["P_RECT", "SI", "F_T_RECTANGULO"]
+  - ["P_RECT", "NO", "F_T_OBTUSO"] 
+
+  - ["P_4L_REG", "SI", "P_4L_EQ"]  
+  - ["P_4L_REG", "NO", "P_4L_PAR"] 
+
+  - ["P_4L_EQ", "SI", "F_CUADRADO"]
+  - ["P_4L_EQ", "NO", "F_RECTANGULO"]
+
+  - ["P_4L_PAR", "SI", "F_TRAPECIO"]
+  - ["P_4L_PAR", "NO", "F_ROMBO"]
