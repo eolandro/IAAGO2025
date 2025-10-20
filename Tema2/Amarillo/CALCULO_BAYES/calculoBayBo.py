@@ -15,8 +15,8 @@ for i, fila in enumerate(matriz, start=1):
         casillas[clave] = valor
 
 def detector(valor):
-    vacias10 = [0, 0, 0, 0, 0, 0, 0, 0, 1, 1]
-    bombas10 = [1, 1, 1, 1, 1, 1, 1, 1, 1, 0]
+    vacias = [0, 0, 0, 0, 0, 0, 0, 0, 1, 1]
+    bomba = [1, 1, 1, 1, 1, 1, 1, 1, 1, 0]
 
     def custom_choice(lst):
         shuffled_list = lst[:]
@@ -24,9 +24,9 @@ def detector(valor):
         return shuffled_list[0]
 
     if valor == 1:
-        return custom_choice(bombas10)
+        return custom_choice(bomba)
     else:
-        return custom_choice(vacias10)
+        return custom_choice(vacias)
 
 # Probabilidades
 PPB = 9 / 10
