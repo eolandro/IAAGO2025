@@ -9,10 +9,10 @@ with open('tablero.yaml', 'r') as file:
 columnas = "ABCDE"
 casillas = {}
 
-for i, fila in enumerate(matriz, start=1):
-    for j, valor in enumerate(fila):
-        clave = f"{columnas[j]}{i}"
-        casillas[clave] = valor
+for i in range(1, 11):  # Filas 1 a 10
+    for letra in columnas:  # Columnas A → E
+        clave = f"{letra}{i}"
+        valor = casillas[clave]
 
 def detector(valor):
     vacias = [0, 0, 0, 0, 0, 0, 0, 0, 1, 1]
