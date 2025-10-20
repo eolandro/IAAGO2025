@@ -56,19 +56,18 @@ def adivinar_animal():
     animales = datos_tabla['animales']
     
     print("=== ADIVINA EL ANIMAL ===")
-    print(f"📊 Base de datos: {len(animales)} animales, {len(preguntas_orden)} características")
-    print("💡 Usando algoritmo inteligente para menos preguntas")
+    print(f"Base de datos: {len(animales)} animales, {len(preguntas_orden)} características")
     
     posibles = animales.copy()
     preguntas_hechas = 0
     preguntas_disponibles = preguntas_orden.copy()
     
     # Mostrar animales disponibles (opcional)
-    print("\n🐾 Animales en el sistema:")
+    print("\nAnimales en el sistema:")
     for animal in animales_nombres:
         print(f"   - {animal}")
     
-    print("\n🎯 Comenzando adivinanza inteligente...")
+    print("\nComenzando adivinanza inteligente...")
     
     while len(posibles) > 1 and preguntas_disponibles:
         pregunta = mejor_pregunta_simple(posibles, preguntas_disponibles)
@@ -76,12 +75,12 @@ def adivinar_animal():
         if pregunta is None:
             break
         #Preguntar
-        resp = input(f"❓ ¿Tiene '{pregunta.replace('_', ' ')}'? (s/n): ").lower()
+        resp = input(f"¿Tiene '{pregunta.replace('_', ' ')}'? (s/n): ").lower()
         
         #Validar
         while resp not in ['s', 'n']:
-            print("⚠️  Por favor responde 's' para Sí o 'n' para No")
-            resp = input(f"❓ ¿Tiene '{pregunta.replace('_', ' ')}'? (s/n): ").lower()
+            print("Por favor responde 's' para Sí o 'n' para No")
+            resp = input(f"¿Tiene '{pregunta.replace('_', ' ')}'? (s/n): ").lower()
         
         # Filtrar animales basado en la respuesta
         if resp == 's':
@@ -91,20 +90,13 @@ def adivinar_animal():
         
         # Verificar si la pregunta fue útil
         if len(nuevos_posibles) == len(posibles):
-            print("💡 Esa pregunta no eliminó ningún animal, saltando...")
+            print("Esa pregunta no eliminó ningún animal, saltando...")
         else:
             posibles = nuevos_posibles
             preguntas_hechas += 1
         
         # Remover la pregunta de las disponibles
         preguntas_disponibles.remove(pregunta)
-        
-        print(f"🔄 Animales posibles: {len(posibles)}")
-        
-        # Mostrar opciones si son pocas
-        if len(posibles) <= 3:
-            nombres = [a['nombre'] for a in posibles]
-            print(f"📋 Opciones: {', '.join(nombres)}")
         
         # Si solo queda 1, podemos terminar
         if len(posibles) == 1:
@@ -115,47 +107,18 @@ def adivinar_animal():
     
     if len(posibles) == 1:
         animal_adivinado = posibles[0]['nombre']
-        print(f"🎉 ¡ADIVINÉ! Tu animal es: {animal_adivinado}")
-        
-        # Mostrar información adicional del animal adivinado
-        animal_info = posibles[0]
-        print("\n📋 Características del animal:")
-        caracteristicas_presentes = []
-        for caracteristica, valor in animal_info.items():
-            if caracteristica != 'nombre' and valor == 1:
-                caracteristicas_presentes.append(caracteristica.replace('_', ' '))
-        
-        if caracteristicas_presentes:
-            for caract in caracteristicas_presentes:
-                print(f"   ✅ {caract}")
-        else:
-            print("   (No tiene características destacadas)")
+        print(f"¡ADIVINÉ! Tu animal es: {animal_adivinado}")
                 
     elif len(posibles) > 1:
         nombres = [a['nombre'] for a in posibles]
-        print(f"🤔 No estoy 100% seguro, podría ser uno de estos:")
+        print(f"No estoy 100% seguro, podría ser uno de estos:")
         for nombre in nombres:
             print(f"   - {nombre}")
-        
-        # Mostrar características para ayudar a decidir
-        print("\n💎 Características de las opciones:")
-        for animal in posibles:
-            print(f"\n   {animal['nombre']}:")
-            caracteristicas = [caract.replace('_', ' ') for caract, valor in animal.items() 
-                             if caract != 'nombre' and valor == 1]
-            if caracteristicas:
-                for caract in caracteristicas:
-                    print(f"     ✅ {caract}")
-            else:
-                print(f"     (Sin características destacadas)")
     else:
-        print("😞 No encontré ningún animal que coincida con tus respuestas")
-        print("   Puede que haya un error en los datos o en las respuestas")
+        print("No encontré al animal que estabas pensando")
     
-    print(f"\n📊 Resumen:")
+    print(f"\nResumen:")
     print(f"   Preguntas realizadas: {preguntas_hechas}")
-    print(f"   Eficiencia: {preguntas_hechas}/{len(preguntas_orden)} preguntas posibles")
-    print(f"   Animales descartados: {len(animales) - len(posibles)}")
 
 if __name__ == '__main__':
     adivinar_animal()
