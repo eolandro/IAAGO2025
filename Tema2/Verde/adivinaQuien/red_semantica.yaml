@@ -1,0 +1,22 @@
+animales:
+  - Pinguino
+  - Nutria
+  - León
+  - Gato
+  - Canguro
+  - Rata
+  - Cocodrilo
+  - Iguana
+  - Mapache
+  - Alacran
+caracteristicas:
+  - Palmeada
+  - Melena
+  - Patea
+  - Lengua_Áspera
+  - Escamas
+  - Colmillos
+  - Veneno
+  - Aletas
+  - Bigote
+  - Pelaje

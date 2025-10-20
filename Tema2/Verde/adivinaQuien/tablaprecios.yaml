@@ -1,0 +1,124 @@
+animales:
+- nombre: Pinguino
+  Palmeada: 1
+  Melena: 0
+  Patea: 0
+  Lengua_Áspera: 1
+  Escamas: 0
+  Colmillos: 0
+  Veneno: 0
+  Aletas: 1
+  Bigote: 0
+  Pelaje: 0
+- nombre: Nutria
+  Palmeada: 1
+  Melena: 0
+  Patea: 0
+  Lengua_Áspera: 0
+  Escamas: 0
+  Colmillos: 1
+  Veneno: 0
+  Aletas: 0
+  Bigote: 1
+  Pelaje: 1
+- nombre: León
+  Palmeada: 0
+  Melena: 1
+  Patea: 1
+  Lengua_Áspera: 1
+  Escamas: 0
+  Colmillos: 1
+  Veneno: 0
+  Aletas: 0
+  Bigote: 1
+  Pelaje: 1
+- nombre: Gato
+  Palmeada: 0
+  Melena: 0
+  Patea: 1
+  Lengua_Áspera: 1
+  Escamas: 0
+  Colmillos: 1
+  Veneno: 0
+  Aletas: 0
+  Bigote: 1
+  Pelaje: 1
+- nombre: Canguro
+  Palmeada: 0
+  Melena: 0
+  Patea: 1
+  Lengua_Áspera: 0
+  Escamas: 0
+  Colmillos: 0
+  Veneno: 0
+  Aletas: 0
+  Bigote: 1
+  Pelaje: 1
+- nombre: Rata
+  Palmeada: 0
+  Melena: 0
+  Patea: 0
+  Lengua_Áspera: 1
+  Escamas: 0
+  Colmillos: 1
+  Veneno: 0
+  Aletas: 0
+  Bigote: 1
+  Pelaje: 1
+- nombre: Cocodrilo
+  Palmeada: 0
+  Melena: 0
+  Patea: 0
+  Lengua_Áspera: 0
+  Escamas: 1
+  Colmillos: 1
+  Veneno: 0
+  Aletas: 0
+  Bigote: 0
+  Pelaje: 0
+- nombre: Iguana
+  Palmeada: 0
+  Melena: 0
+  Patea: 0
+  Lengua_Áspera: 0
+  Escamas: 1
+  Colmillos: 0
+  Veneno: 0
+  Aletas: 0
+  Bigote: 0
+  Pelaje: 0
+- nombre: Mapache
+  Palmeada: 0
+  Melena: 0
+  Patea: 0
+  Lengua_Áspera: 0
+  Escamas: 0
+  Colmillos: 1
+  Veneno: 0
+  Aletas: 0
+  Bigote: 1
+  Pelaje: 1
+- nombre: Alacran
+  Palmeada: 0
+  Melena: 0
+  Patea: 0
+  Lengua_Áspera: 0
+  Escamas: 0
+  Colmillos: 0
+  Veneno: 1
+  Aletas: 0
+  Bigote: 0
+  Pelaje: 0
+caracteristicas_orden:
+- Lengua_Áspera
+- Colmillos
+- Bigote
+- Pelaje
+- Patea
+- Palmeada
+- Escamas
+- Melena
+- Veneno
+- Aletas
+total_animales: 10
+total_caracteristicas: 10
