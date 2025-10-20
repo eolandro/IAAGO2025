@@ -1,86 +1,70 @@
 import json
 
-class Nodo:
-    def __init__(self, nombre, valor_arista=None, informacion=None):
-        self.nombre = nombre 
-        self.valor_arista = valor_arista  
-        self.informacion = informacion  
-        self.hijos = [] 
+"""Construye un mapa de adyacencia desde la lista de transiciones."""
+def construir_mapa_adj(transiciones):
+    mapa = {}
+    for padre, arista, hijo in transiciones:
+        mapa.setdefault(padre, []).append((arista, hijo))
+    return mapa
 
-  
-    def agregar_hijo(self, nodo_hijo, valor_arista):
-        nodo_hijo.valor_arista = valor_arista
-        self.hijos.append(nodo_hijo)
+#***************************************************************************
+def normaliza_respuesta(s: str) -> str:
+    t = (s or "").strip().lower()
 
+    respuestas_map = {
+        "s": "Si", "si": "Si", "sí": "Si",
+        "n": "No", "no": "No"
+    }
+    return respuestas_map.get(t, t)
 
-nodos = {}
+#***************************************************************************
+def recorrido_interactivo(nodo_id, preguntas, mapa_adj):
+    texto = preguntas.get(nodo_id, "(Respuesta)")
+    hijos = mapa_adj.get(nodo_id, [])
 
+    # PRIMER IF - Caso base: nodo hoja
+    if not hijos:
+        mensaje_final = f"Tu figura es: {texto}" 
+        print(f"\n********************************\n{mensaje_final}\n********************************")
+        return
 
-def crear_arbol(transiciones, preguntas):
-    
-    for padre_id, arista, hijo_id in transiciones:
+    pregunta = f"\n{texto} => "
+    respuesta = input(pregunta)
+    respuesta_norm = normaliza_respuesta(respuesta)
 
-        nodo_padre = nodos.setdefault(padre_id, Nodo(nombre=padre_id))
-        nodo_hijo = nodos.setdefault(hijo_id, Nodo(nombre=hijo_id))
+    for valor_arista, hijo in hijos:
+        if valor_arista.lower() == respuesta_norm.lower():
+            return recorrido_interactivo(hijo, preguntas, mapa_adj)
 
+    print("\nLo siento, esa respuesta no es válida. Por favor, intenta de nuevo.")
+    return recorrido_interactivo(nodo_id, preguntas, mapa_adj)
 
-        nodo_padre.agregar_hijo(nodo_hijo, arista)
+#***************************************************************************
+def main():
+    print("********************************")
+    print("      Adivinador de Figuras")
+    print("********************************")
+    print("\n¡Bienvenido! Responde a las preguntas para adivinar tu figura.")
+    print("Respuestas posibles: 'Si', 'No', o un número cuando se pida.\n")
 
-    
-    for nodo_id, info in preguntas.items():
-        if nodo_id in nodos:
-            nodos[nodo_id].informacion = info
+    try:
+        with open("TRANSICIONES.json", encoding='utf-8') as entrada:
+            datos = json.load(entrada)
 
-def recorrido_dfs(nodo):
+        # Este if se mantiene como parte de la validación principal
+        if "A" not in datos.get("Preguntas", {}):
+            print("Error: No se encontró el nodo raíz 'A' en la sección 'Preguntas' del JSON.")
+            return
 
-    if nodo.hijos:
+        mapa_adj = construir_mapa_adj(datos["Transiciones"])
+        recorrido_interactivo("A", datos["Preguntas"], mapa_adj)
 
-        respuesta = input(f"\n {nodo.informacion} => ")
-    else:
-        
-        print("\n********************************")
-        print(f"Tu figura es: {nodo.informacion}")
-        print("********************************")
-        return 
+    except FileNotFoundError:
+        print("Error: No se encontró 'TRANSICIONES.json'. Verifica que el archivo esté en la misma carpeta.")
+    except KeyError as e:
+        print(f"Error: El archivo JSON no tiene la clave requerida: {e}.")
+    except Exception as e:
+        print(f"Ocurrió un error inesperado: {e}")
 
-   
-    encontrado = False
-    for hijo in nodo.hijos:
-      
-        if hijo.valor_arista.lower() == respuesta.lower():
-            encontrado = True
-            recorrido_dfs(hijo)  
-            break
-    
-    if not encontrado:
-        print("\nLo siento, esa respuesta no es válida. Por favor, intenta de nuevo.")
-        recorrido_dfs(nodo) 
-
-
-
-print("********************************")
-print("      Adivinador de Figuras")
-print("********************************")
-print("\n¡Bienvenido! Responde a las preguntas para adivinar tu figura.")
-print("Respuestas posibles: 'Si', 'No', o un número cuando se pida.\n")
-
-try:
-  
-    with open("figuras.json", encoding='utf-8') as entrada:
-        datos = json.load(entrada)
-
- 
-    transiciones = datos["Transiciones"]
-    preguntas = datos["Preguntas"]
-    
-    crear_arbol(transiciones, preguntas)
-    
-    recorrido_dfs(nodos["A"])
-
-except FileNotFoundError:
-  
-    print("Error: No se encontró 'hola.json'. Verifica que el archivo esté en la misma carpeta que el script y que el nombre sea exacto.")
-except KeyError:
-    print("Error: El archivo JSON no tiene las claves 'Transiciones' o 'Preguntas' requeridas.")
-except Exception as e:
-    print(f"Ocurrió un error inesperado: {e}")
+if __name__ == "__main__":
+    main()
