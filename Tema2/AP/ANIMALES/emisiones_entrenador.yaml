@@ -1,0 +1,9 @@
+reporte_emisiones:
+  info_ejecucion:
+    duracion_segundos: 173.9239
+  parametros_calculo:
+    potencia_watts: 45.0
+    intensidad_carbono_g_kwh: 434.0
+  resultados:
+    energia_consumida_kwh: 0.00217405
+    emisiones_estimadas_gCO2e: 0.94353741
