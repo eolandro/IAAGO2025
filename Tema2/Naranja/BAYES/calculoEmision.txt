@@ -1,0 +1,8 @@
+Mi laptop, en 1 hora de uso con un cargador de 65 W emite 0.0289 kgCO₂e = 28.9 gCO₂e
+
+El programa (boome_bayes.py) duró 0.089 segundos en ejecutarse
+0.089 s / 3600 = 0.0000247 h
+
+Así que multipliqué 28.9 gCO₂e × 0.0000247 h ≈ 0.000714 gCO₂e
+
+✅ Resultado: El programa generó aproximadamente 0.000714 gCO₂e durante su ejecución.
