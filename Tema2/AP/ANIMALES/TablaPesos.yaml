@@ -1,0 +1,142 @@
+caracteristicas:
+- ¿Tiene la pata palmeada?
+- ¿Tiene melena?
+- ¿Puede patear?
+- ¿Tiene la lengua aspera?
+- ¿Tiene escamas?
+- ¿Tiene colnillos?
+- ¿Tiene veneno?
+- ¿Tiene aletas?
+- ¿Tiene bigote?
+- ¿Tiene pelo?
+tabla_animales:
+  Rata:
+    respuestas:
+    - 0
+    - 0
+    - 0
+    - 1
+    - 0
+    - 1
+    - 0
+    - 0
+    - 1
+    - 1
+    suma_binaria: 83
+  Nutria:
+    respuestas:
+    - 1
+    - 0
+    - 0
+    - 0
+    - 0
+    - 1
+    - 0
+    - 0
+    - 1
+    - 1
+    suma_binaria: 531
+  Canguro:
+    respuestas:
+    - 0
+    - 0
+    - 1
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 1
+    - 1
+    suma_binaria: 131
+  Gato:
+    respuestas:
+    - 0
+    - 0
+    - 1
+    - 1
+    - 0
+    - 1
+    - 0
+    - 0
+    - 1
+    - 1
+    suma_binaria: 211
+  Iguana:
+    respuestas:
+    - 0
+    - 0
+    - 0
+    - 0
+    - 1
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    suma_binaria: 32
+  Cocodrilo:
+    respuestas:
+    - 0
+    - 0
+    - 0
+    - 0
+    - 1
+    - 1
+    - 0
+    - 0
+    - 0
+    - 0
+    suma_binaria: 48
+  Alacran:
+    respuestas:
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 1
+    - 0
+    - 0
+    - 0
+    suma_binaria: 8
+  Pinguino:
+    respuestas:
+    - 1
+    - 0
+    - 0
+    - 1
+    - 0
+    - 0
+    - 0
+    - 1
+    - 0
+    - 0
+    suma_binaria: 580
+  Mapache:
+    respuestas:
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 1
+    - 0
+    - 0
+    - 1
+    - 1
+    suma_binaria: 19
+  Leon:
+    respuestas:
+    - 0
+    - 1
+    - 1
+    - 1
+    - 0
+    - 1
+    - 0
+    - 0
+    - 1
+    - 1
+    suma_binaria: 467
