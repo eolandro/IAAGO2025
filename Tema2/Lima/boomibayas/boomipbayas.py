@@ -54,7 +54,7 @@ def buscar_bomba(mapa):
                 P_total = P_actual  
 
                 for intento in range(2):
-                    confirmacion = random.random() < (P_DETECTAR_SI_BOMBA if hay_bomba else P_DETECTAR_SI_VACIO)
+                    confirmacion = (P_DETECTAR_SI_BOMBA if hay_bomba else P_DETECTAR_SI_VACIO)
                     print(f"  → Revisión {intento+2}: {'Positivo' if confirmacion else 'Negativo'}")
 
                     P_total = probabilidad_bayesiana(P_total, confirmacion)
