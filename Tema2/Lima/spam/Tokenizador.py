@@ -38,7 +38,10 @@ for palabra in frecuencias:
     }
 
 # Ordenar por probabilidad descendente y quedarnos con las 10 primeras
-top_15 = dict(sorted(probabilidades.items(), key=lambda x: x[1]["probabilidad"], reverse=True)[:15])
+def obtener_probabilidad(item):
+    return item[1]["probabilidad"]
+
+top_15 = dict(sorted(probabilidades.items(), key=obtener_probabilidad, reverse=True)[:15])
 
 # Guardar en YAML
 archivo_salida = "tokenizador.yaml"
@@ -46,3 +49,4 @@ with open(archivo_salida, "w", encoding="utf-8") as f:
     yaml.dump(top_15, f, allow_unicode=True, sort_keys=False)
 
 print(f"\nArchivo '{archivo_salida}' generado con las 10 palabras con mayor probabilidad.\n")
+
