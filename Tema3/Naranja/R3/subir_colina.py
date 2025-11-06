@@ -98,6 +98,12 @@ def sC(G, inicio, objetivo):
 
 # REPL
 while True:
+
+    print("El nombre de las funciones es:")
+    print("llenarG()-> para llenar el grafo")
+    print("sC(G,inicio,objetivo)-> para subir la colina\n")
+
+
     READ = input(">")
     if READ.strip() == "salir()":
         print("Saliendo del programa.")
