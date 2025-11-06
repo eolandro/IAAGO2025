@@ -1,0 +1,20 @@
+[
+  ["A","AA"],
+  ["A","AB"],
+  ["A","AC"],
+  ["AA","AAA"],
+  ["AA","AAB"],
+  ["AA","AAC"],
+  ["AAA","AAAA"],
+  ["AAC","AACA"],
+  ["AAC","AACB"],
+  ["AB","ABA"],
+  ["AB","ABB"],
+  ["AC","ACA"],
+  ["AC","ACB"],
+  ["AC","ACC"],
+  ["ACB","ACBA"],
+  ["ACBA","ACBAA"]
+
+]
+
