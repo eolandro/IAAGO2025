@@ -1,0 +1,8 @@
+A: [AA, AB, AC]
+AA: [AAA, AAB, AAC]
+AAA: [AAAA]
+AAC: [AACA, AACB]
+AB: [ABA, ABB]
+AC: [ACA, ACB, ACC]
+ACB: [ACBA]
+ACBA: [ACBAA]
