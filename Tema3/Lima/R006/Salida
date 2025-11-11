@@ -7,3 +7,16 @@ Ejemplo de salida:
 47 50 45 54 25 20 11 14
 56 43 52  3 22 13 24  5
 51 46 55 44 53  4 21 12
+
+CO2:
+Consumo en watts del cargador: P = 45 W = 0.045 kW
+Tiempo de ejecución: t = 2.5 horas
+Factor de emisión eléctrico (México): EF = 0.38 kg CO₂/kWh
+
+Cálculo de energía consumida:
+E_kWh = P_kW * t_horas
+E_kWh = 0.045 * 2.5 = 0.112500 kWh
+
+Calcular emisiones de CO₂:
+CO2_kg = E_kWh * EF
+CO2_kg = 0.112500 * 0.38 = 0.042750 kg CO₂
