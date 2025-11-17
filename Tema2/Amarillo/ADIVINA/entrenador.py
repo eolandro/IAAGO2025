@@ -13,7 +13,7 @@ with open("animales.yml") as entrada:
     Datos = yaml.load(cad)
 
 L_carac = []
-print("\n---------------------- E N T R E N A D O R ----------------------\n")
+print("\n-------------------------- E N T R E N A D O R --------------------------\n")
 for carac in Datos['Caracteristicas']:
     # Insertar la característica en el encabezado antes de "Total"
     data["encabezado"].insert(-1, carac)

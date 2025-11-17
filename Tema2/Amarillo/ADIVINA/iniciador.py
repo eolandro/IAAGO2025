@@ -5,7 +5,7 @@ archivo = "animales.yml"
 animales = []
 caracteristicas = []
 
-print("\n------------------- I N I C I A D O R ---------------------\n")
+print("\n-------------------------- I N I C I A D O R --------------------------\n")
 print("\nIngresa 10 animales y 10 características\n")
 
 # Ingreso de animales
