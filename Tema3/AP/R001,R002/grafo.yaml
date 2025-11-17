@@ -1,0 +1,34 @@
+ARBOL:
+  A:
+    - AA
+    - AB
+    - AC
+  AA:
+    - AAA
+    - AAB
+    - AAC
+  AB:
+    - ABA
+    - ABB
+  AC:
+    - ACA
+    - ACB
+    - ACC
+  AAA:
+    - AAAA
+  AAB: []
+  AAC:
+    - AACA
+    - AACB
+  ABA: []
+  ABB: []
+  ACA: []
+  ACB:
+    - ACBA
+  ACC: []
+  AAAA: []
+  AACA: []
+  AACB: []
+  ACBA:
+    - ACBAA
+  ACBAA: []
