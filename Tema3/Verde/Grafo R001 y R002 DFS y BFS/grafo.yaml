@@ -1,0 +1,17 @@
+A:
+  AA:
+    AAA:
+      AAAA: {}
+    AAB: {}
+    AAC:
+      AACA: {}
+      AACB: {}
+  AB:
+    ABA: {}
+    ABB: {}
+  AC:
+    ACA: {}
+    ACB:
+      ACBA:
+        ACBAA: {}
+    ACC: {}
