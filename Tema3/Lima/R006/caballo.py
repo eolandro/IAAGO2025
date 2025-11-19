@@ -1,6 +1,5 @@
 N = 8
 
-# Movimientos posibles del caballo (x, y)
 movimientos_x = [2, 1, -1, -2, -2, -1, 1, 2]
 movimientos_y = [1, 2, 2, 1, -1, -2, -2, -1]
 
@@ -23,11 +22,11 @@ def es_valido(x, y, tablero):
 
 def resolver_caballo(tablero, x, y, mov_contador):
     """Función recursiva para recorrer el tablero."""
-    # Si el caballo visitó todas las casillas
+
     if mov_contador == N * N:
         return True
 
-    # Prueba todos los movimientos del caballo
+    # Prueba los posibles movimientos
     for i in range(8):
         sig_x = x + movimientos_x[i]
         sig_y = y + movimientos_y[i]
@@ -46,7 +45,6 @@ def imprimir_tablero(tablero):
 
 def recorrido_caballo():
     """Pide coordenadas, inicializa el tablero y resuelve el recorrido."""
-    # Pedir coordenadas al usuario
     while True:
         try:
             pos_x = int(input("Ingresa la coordenada X (0-7): "))
@@ -60,7 +58,7 @@ def recorrido_caballo():
 
     # Crear tablero vacío
     tablero = [[-1 for _ in range(N)] for _ in range(N)]
-    tablero[pos_x][pos_y] = 0  # posición inicial
+    tablero[pos_x][pos_y] = 0  
 
     if not resolver_caballo(tablero, pos_x, pos_y, 1):
         print("No existe solución desde esa posición.")
@@ -69,3 +67,4 @@ def recorrido_caballo():
 
 # Ejecutar
 recorrido_caballo()
+
