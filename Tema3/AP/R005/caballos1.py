@@ -1,4 +1,4 @@
-# tablero inicial (puedes cambiar si quieres)
+# tablero inicial
 tablero = [
     ["1N", 0, "2N"],
     [   0, 0,    0],
@@ -8,7 +8,7 @@ tablero = [
 # anillo exterior en sentido horario (posiciones)
 anillo = [(0,0),(0,1),(0,2),(1,2),(2,2),(2,1),(2,0),(1,0)]
 
-# movimientos de caballo (delta)
+# movimientos de caballo
 def es_salto_valido(origen, destino):
     ar, ac = origen
     br, bc = destino
@@ -112,3 +112,4 @@ while True:
         break
 
     giro += 1
+
