@@ -5,98 +5,161 @@ import pyautogui
 import argparse
 import glob
 from config import B, C
-from tablero import a as Analizar
+from tablero import a as A
 
-def h(I):
+def TC():  
+    try:
+        from ruamel.yaml import YAML
+        Y = YAML()
+        
+        if not os.path.exists("calibraciones/calibrarC.yaml"):
+            print("Ejecuta calibrarC.py")
+            return None, False
+        
+        with open("calibraciones/calibrarC.yaml", "r") as F:
+            D = Y.load(F)
+        
+        if 'area_captura' not in D:
+            return None, False
+        
+        AC = D['area_captura']
+        BA = {}
+        BA[1] = tuple(AC['sup_izq'])
+        BA[2] = tuple(AC['sup_der'])
+        BA[3] = tuple(AC['inf_izq'])
+        BA[4] = tuple(AC['inf_der'])
+        
+        x1, y1 = BA[1]
+        x2, y2 = BA[2]
+        x3, y3 = BA[3]
+        x4, y4 = BA[4]
+        
+        L = min(x1, x3)
+        T = min(y1, y2)
+        R = max(x2, x4)
+        Bt = max(y3, y4)
+        
+        W = R - L
+        H = Bt - T
+        
+        if W <= 0 or H <= 0:
+            return None, False
+        
+        CC = "capturas"
+        if not os.path.exists(CC):
+            os.makedirs(CC)
+        
+        i = 1
+        while True:
+            N = f"img{i}.png"
+            R = os.path.join(CC, N)
+            if not os.path.exists(R):
+                break
+            i += 1
+        
+        juego_terminado = False
+        if 'posicion_blanco' in D:
+            xb, yb = tuple(D['posicion_blanco'])
+            pixel = pyautogui.pixel(xb, yb)
+            r, g, b = pixel
+            
+            if r > 200 and g > 200 and b > 200:
+                juego_terminado = True
+        
+        time.sleep(0.3)
+        S = pyautogui.screenshot(region=(L, T, W, H))
+        S.save(R)
+        
+        return R, juego_terminado
+        
+    except Exception as e:
+        print(f"Error en captura: {e}")
+        return None, False
+
+def H(I):  
     if I in B:
         Xb, Yb = B[I]
-        pyautogui.moveTo(Xb, Yb, duration=0.5)
-        time.sleep(0.2)
+        pyautogui.moveTo(Xb, Yb, duration=0.3)
+        time.sleep(0.1)
         pyautogui.click()
-        print(f"Se precionó el botón: {C[I]['n']}")
-        print(f"Presionar Ctrl + C para detener")
-        time.sleep(0.5)
-    else:
-        print(f"No hay coordenadas para el color {I}")
+        time.sleep(0.3)
 
-def procesar_imagen(Img, Auto):
-    R = Analizar(Img)
-    
-    if not R:
-        print("Tablero no encontrado")
-        return False
-    
-    G, Mc, Ga, Ta = R
-    Ca = G[0][0]
-    
-    print(f"\n * Color Actual: {C[Ca]['n']}")
-    print(f" * Color Recomendado: {C[Mc]['n']}")
-    
-    if Auto:
-        print(f"\n Ejecutando automática...")
-        print("=============================")
-        
-        for I in range(2, 0, -1):
-            time.sleep(0.5)
-        
-        h(Mc)
-    
-    return True
-
-def monitorear(Img, Auto):
-    if Auto:
-        print("  MODO AUTOMÁTICO ACTIVADO")
-    else:
-        print("  MODO VISUAL ACTIVADO")
-    
-    Procesadas = set()
-    
-    if os.path.exists(Img):
-        procesar_imagen(Img, Auto)
-        Procesadas.add(Img)
-    
+def MJ(Auto, Lim=31):
     try:
-        while True:
-            Actuales = set(glob.glob("img*.png"))
+        M = 0 
+        
+        while M < Lim:
+            print(f"Movimiento {M+1}/{Lim}")
             
-            for Img in sorted(Actuales - Procesadas):
-                if procesar_imagen(Img, Auto):
-                    Procesadas.add(Img)
+            RI, terminado = TC()  
+            
+            if terminado:
+                print(f"\n{'='*50}")
+                print("¡JUEGO TERMINADO DETECTADO!")
+                print(f"Se jugaron {M} movimientos")
+                print(f"{'='*50}")
+                time.sleep(3)
+                break
+            
+            if not RI:
+                print("Error al capturar")
                 time.sleep(1)
+                continue
             
-            time.sleep(0.5)
+            print("Analizando tablero...")
+            R = A(RI)
+            
+            if not R:
+                time.sleep(1)
+                continue
+            
+            G, Mc, Ga, Ta = R
+            Ca = G[0][0]
+            
+            print(f"Color Actual: {C[Ca]['n']}")
+            print(f"Color Recomendado: {C[Mc]['n']}")
+            print(f"{'='*50}")
+            
+            if Ta >= 324:
+                print(f"\n{'='*50}")
+                print("¡TABLERO COMPLETO!")
+                print(f"{'='*50}")
+                time.sleep(3)
+                break
+            
+            if Auto and Mc:
+                H(Mc)
+                M += 1
+            
+            time.sleep(1.0)
+            
+            if M >= Lim:
+                time.sleep(3)
+                break
             
     except KeyboardInterrupt:
-        print("\nPrograma detenido")
+        print("\n\nJuego interrumpido")
+    except Exception as e:
+        print(f"\nError: {e}")
 
 def main():
-    Parser = argparse.ArgumentParser(
-        description='Analizador Open Flood', 
-        formatter_class=argparse.RawTextHelpFormatter
-    )
+    parser = argparse.ArgumentParser(description='Open Flood - Auto Player')
     
-    Parser.add_argument('imagen', help='Imagen inicial (ej: img1.png)')
+    parser.add_argument('--auto', action='store_true', help='Modo automático')
+    parser.add_argument('--juego', action='store_true', help='Iniciar juego')
+    parser.add_argument('--limite', type=int, default=31, help='Límite de movimientos')
     
-    Parser.add_argument('--auto', action='store_true', 
-                       help='Ejecutar movimientos automáticamente')
+    args = parser.parse_args()
     
-    Parser.add_argument('--monitor', action='store_true', 
-                       help='Monitorear imágenes continuamente')
+    print("="*50)
+    print("OPEN FLOOD - AUTO PLAYER")
+    print("="*50)
     
-    Args = Parser.parse_args()
-    
-    if not os.path.exists(Args.imagen):
-        print(f"No se encontró: {Args.imagen}")
-        sys.exit(1)
-    
-    print("=============================")
-    print("          OPEN FLOOD         ")
-    print("=============================")
-    
-    if Args.monitor:
-        monitorear(Args.imagen, Args.auto)
+    if args.juego:
+        MJ(args.auto, args.limite)
     else:
-        procesar_imagen(Args.imagen, Args.auto)
+        print("Uso: python main.py --juego --auto")
+        print("\nPrimero ejecuta: python calibrarC.py")
 
 if __name__ == "__main__":
     main()
