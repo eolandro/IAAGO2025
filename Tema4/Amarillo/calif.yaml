@@ -1,0 +1,17 @@
+Equipo:
+- NoControl: '20590268'
+  Nombre: Andrea Martinez Ruiz
+- NoControl: '17142056'
+  Nombre: Juan Suriel Venancio Ruiz
+Calificacion: 100
+Informe:
+- Actividad: "Nombre: Proyecto\nDescripción: Un proyecto representativo, a cualquier
+    vertiente de la IA.\nNotas: El alumno deberia elegir que proyecto\nElementos Clave:
+    Redes Neuronales, Sistemas Expertos, LLMS\nSEAES_CACEI: CD1-3,CD2-3,CD2-5,AE1,AE2,AE5,
+    Compromiso con responsabilidad Social."
+  Reactivos:
+  - ID: R001
+    Ponderacion: 100
+    Reactivo: "Descripción: Un programa que aplique Primero en Profundidad\nRestricciones:
+      Las que el Docente decida."
+    Cumplio: Si

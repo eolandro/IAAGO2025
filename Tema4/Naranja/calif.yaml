@@ -1,0 +1,19 @@
+Equipo:
+- NoControl: '21590286'
+  Nombre: Miguel Angel Ledesma Corona
+- NoControl: '21590398'
+  Nombre: Edgar Alfredo Torres Trujillo
+- NoControl: '21590477'
+  Nombre: Yara Fernanda Juarez Gomez
+Calificacion: 100
+Informe:
+- Actividad: "Nombre: Proyecto\nDescripción: Un proyecto representativo, a cualquier
+    vertiente de la IA.\nNotas: El alumno deberia elegir que proyecto\nElementos Clave:
+    Redes Neuronales, Sistemas Expertos, LLMS\nSEAES_CACEI: CD1-3,CD2-3,CD2-5,AE1,AE2,AE5,
+    Compromiso con responsabilidad Social."
+  Reactivos:
+  - ID: R001
+    Ponderacion: 100
+    Reactivo: "Descripción: Un programa que aplique Primero en Profundidad\nRestricciones:
+      Las que el Docente decida."
+    Cumplio: Si

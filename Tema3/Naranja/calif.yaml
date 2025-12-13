@@ -1,3 +1,12 @@
+Equipo:
+- NoControl: '21590286'
+  Nombre: Miguel Angel Ledesma Corona
+- NoControl: '21590398'
+  Nombre: Edgar Alfredo Torres Trujillo
+- NoControl: '21590477'
+  Nombre: Yara Fernanda Juarez Gomez
+Calificacion: 90
+Informe:
 - Actividad: "Nombre: Busqueda local\nDescripción: Diversos demostraciones de algorimos
     de busqueda local.\nNotas: La idea es explicar el algorimo y que cada alumno realice
     su interpretación\nElementos Clave: Primero Profundidad, Primero Anchura, Subir
@@ -7,14 +16,17 @@
     Ponderacion: 5
     Reactivo: "Descripción: Un programa que aplique Primero en Profundidad\nRestricciones:
       NA."
+    Cumplio: Si
   - ID: R002
     Ponderacion: 5
     Reactivo: "Descripción: Un programa que aplique Primero en Anchura\nRestricciones:
       NA."
+    Cumplio: Si
   - ID: R003
     Ponderacion: 10
     Reactivo: "Descripción: Un programa que aplique Subir la colina\nRestricciones:
       NA."
+    Cumplio: Si
 - Actividad: "Nombre: Espacios de estados\nDescripción: Diversos demostraciones de
     algorimos de espacios de estados.\nNotas: La idea es explicar el algorimo y que
     cada alumno realice su interpretación\nElementos Clave: Algoritmos de ajedrez
@@ -24,23 +36,28 @@
     Ponderacion: 15
     Reactivo: "Descripción: Demostracion del problema de las N reinas.\nRestricciones:
       4 reinas son suficientes."
+    Cumplio: Si
   - ID: R005
     Ponderacion: 15
     Reactivo: "Descripción: Problema de los caballos 1\nRestricciones: Cuatro caballos
       2 negros, 2 blancos intercambian sus lugares en un tablero de  de 6x6"
+    Cumplio: Si
   - ID: R006
     Ponderacion: 15
     Reactivo: "Descripción: Problema de los caballos 2\nRestricciones: Un caballo
       entra en tablero completo y debe recorrelo todo imprimir el recorrido en pantalla"
+    Cumplio: Si
   - ID: R007
     Ponderacion: 15
     Reactivo: "Descripción: Come solo\nRestricciones: Un program que resuelva el juego
       del comesolo dada la pieza faltante en el tablero"
+    Cumplio: Si
 - Actividad: "Nombre: Pathfinding A*\nDescripción: Realizar un programa que aplique
     A* en un escenario especifico.\nNotas: Ultimo programa de boome lee el tablero
     desde un archivo y busca la bomba con A*.\nElementos Clave: Heuristica, A*, pathfinding.\n\
     SEAES_CACEI: CD1-3,CD2-3,AE1,AE2, Compromiso con responsabilidad Social."
   Reactivos:
   - ID: R008
-    Ponderacion: 20
+    Ponderacion: 15
     Reactivo: "Descripción: Aplicacion de pathfinding A*.\nRestricciones: NA"
+    Cumplio: Si
